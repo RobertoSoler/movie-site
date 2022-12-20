@@ -1,0 +1,44 @@
+.typewriter-1 {
+    font-weight: 700;
+    font-size: 36px;
+    background:linear-gradient(white 0 0) 0 0;
+    background-size:calc(var(--n)*1ch) 200%;
+    background-repeat:no-repeat;
+    color:#0000;
+    -webkit-background-clip:text;
+    background-clip:text;
+    animation-timing-function:steps(var(--n));
+    animation: t calc(var(--n)*.1s) linear;
+}
+@keyframes t {
+    from {background-size:0 200%}
+}
+
+@keyframes f {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+}
+}
+
+.typewriter-2 {
+    font-weight: 700;
+    font-size:36px;
+    background:linear-gradient(rgb(220, 219, 219) 0 0) 0 0;
+    background-size:calc(var(--n)*1ch) 200%;
+    background-repeat:no-repeat;
+    color:#0000;
+    -webkit-background-clip:text;
+    background-clip:text;
+    opacity: 0;
+    transform: translateY(3rem);
+    animation: f 2s ease 19s forwards;
+}
+
+@media screen and (max-width: 767px) {
+
+    .typewriter-1 {
+        font-weight: 700;
+        font-size: 18px;
+    }
+}
